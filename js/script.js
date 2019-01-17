@@ -1,15 +1,43 @@
 /* global $ */
 
 // BELOW Update the songs array with four of your favorites songs.
-var songs = [];
-// BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
-// Make sure they match the same order as your array above
+var songs = ["Moon Unit Pt. 2",
+"Living for the Future (FBD Project Remix)",
+"She Knows",
+"Relax Yourself"];
 
+var artists = ["Mogg & Naudascher",
+"Omni Trio",
+"Chief Rugged",
+"Chief Rugged"];
 
+var images = ["", "", "", ""]
+
+var links = ["https://www.youtube.com/watch?v=Ig7ppIX6N3g",
+"https://www.youtube.com/watch?v=QJAIwP9i4Ss",
+"https://www.youtube.com/watch?v=v_qPwAappFc",
+"https://www.youtube.com/watch?v=axjls2Suv1g"];
 
 function displaySongInfo(){
-    // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
+    images.forEach(function(image) {
+        $("#images").append("<img src='" + image + "'>");   
+    });
 
+    songs.forEach(function(song) {
+        $("#songs").append("<p>" + song + "</p>"); 
+    });
+
+    artists.forEach(function(artist) {
+        $("#artists").append("<p> By: " + artist + "</p>");   
+    });
+
+    lengths.forEach(function(length) {
+        $("#lengths").append("<p>" + length + "</p>"); 
+    });
+
+    links.forEach(function(link) {
+        $("#links").append("<a href='" + link + "'> Listen </a>"); 
+    });
 }
 
 function emptySongInfo(){

@@ -4,7 +4,7 @@
 
 ## Day 1
 ### Planning
-- [ ] Review your Starter Code and make sure you understand what code has already been written for you.
+- [x] Review your Starter Code and make sure you understand what code has already been written for you.
 ### Set-Up
 - [x] Go to the repository at https://github.com/ScriptEdcurriculum/playlist
 - [x] Fork this repository to your github account and clone it to a new workspace
